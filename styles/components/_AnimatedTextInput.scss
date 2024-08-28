@@ -1,0 +1,65 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInText {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    // background-color: #282c34;
+    .hello-world {
+        font-size: 4rem;
+        color: white;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        animation: fadeInText 2s ease-in-out forwards;
+        margin-bottom: 2rem;
+      }
+      
+      button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        transition: all 0.3s ease-in-out;
+        transition: transform .4s;
+        &:hover {
+            border-color: #61dafb;
+            outline: none;
+            box-shadow: 0 0 8px rgb(113,103,164);
+            transform: scale(1.2);
+            cursor: pointer;
+          }
+    
+      }
+  }
+  
+  
+  

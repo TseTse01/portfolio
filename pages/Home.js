@@ -3,12 +3,14 @@ import Profil from "../components/Profil";
 import Portfolio from "../components/Portfolio";
 import Competences from "../components/Competences";
 import Contact from "../components/Contact";
+import AnimatedTextInput from "../components/AnimatedTextInput";
 
 function Home() {
   return (
     <div className="appContainer">
+      <Navbar />
       <div className="header">
-        <Navbar />
+        <AnimatedTextInput />
       </div>
       <Profil />
       <Portfolio />

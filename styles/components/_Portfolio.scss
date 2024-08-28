@@ -1,4 +1,54 @@
 .portfolioContainer {
-    min-height: 500px;
-    background-color: blanchedalmond;
-}
+    min-height: 400px;
+    background-color: rgb(12, 12, 12);
+  
+    .portfolio {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+  
+      .titlePortfolio {
+        font-size: xx-large;
+        color: white;
+        margin-bottom: 1rem;
+        margin-top: 20px;
+      }
+  
+      .projectContainer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        overflow-x: auto; /* Défilement horizontal */
+        overflow-y: hidden; /* Empêche le défilement vertical */
+        white-space: nowrap;
+        width: 100%; /* Assure que le container prend toute la largeur disponible */
+        padding: 1rem 0;
+  
+        .card {
+          gap: 1em;
+          display: inline-block;
+          width: 300px; /* Définir une largeur pour chaque carte */
+          margin-right: 1rem; /* Espacement entre les cartes */
+  
+          .image {
+            border: 2px solid white;
+            &:hover {
+                cursor: pointer;
+            }
+          }
+  
+          p {
+            color: white;
+            margin-top: 5px;
+          }
+          .imageLanguage {
+            margin-top: 5px;
+            margin-left: 4px;
+            display: flex;flex-wrap: wrap;
+            gap: 1rem;
+          }
+        }
+      }
+    }
+  }
