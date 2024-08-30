@@ -1,7 +1,7 @@
 import React from "react";
 
 const Competences = () => {
-  return <div className="competenceContainer">competences</div>;
+  return <div className="sectionCompetence">competences</div>;
 };
 
 export default Competences;

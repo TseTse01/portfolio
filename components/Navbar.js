@@ -12,10 +12,10 @@ const Navbar = () => {
 
   useEffect(() => {
     SetAccueil(document.querySelector(".header"));
-    setContact(document.querySelector(".contactContainer"));
-    setProfil(document.querySelector(".profilContainer"));
-    SetPortfolio(document.querySelector(".portfolioContainer"));
-    setCompetence(document.querySelector(".competenceContainer"));
+    setContact(document.querySelector(".sectionContact"));
+    setProfil(document.querySelector(".sectionprofil"));
+    SetPortfolio(document.querySelector(".sectionPortfolio"));
+    setCompetence(document.querySelector(".sectionCompetence"));
 
     const handleScroll = () => {
       const currentScrollY = window.scrollY;

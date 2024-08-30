@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const Profil = () => {
   return (
-    <div className="profilContainer">
+    <div className="sectionprofil">
       <div className="titleProfil">A propos de moi...</div>
       <div className="descriptionContainer">
         <div className="photo">

@@ -1,4 +1,4 @@
-.portfolioContainer {
+.sectionPortfolio {
     min-height: 400px;
     background-color: rgb(12, 12, 12);
   
@@ -27,12 +27,16 @@
   
         .card {
           gap: 1em;
-          display: inline-block;
-          width: 300px; /* Définir une largeur pour chaque carte */
-          margin-right: 1rem; /* Espacement entre les cartes */
+          // display: inline-block;
+          min-width: 300px; /* Définir une largeur pour chaque carte */
+          margin-left: 2rem; /* Espacement entre les cartes */
+          display: flex;
+          flex-direction: column;
+          align-items: center;justify-content: center;
   
           .image {
             border: 2px solid white;
+            
             &:hover {
                 cursor: pointer;
             }
