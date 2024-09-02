@@ -13,7 +13,7 @@
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
       color: #fff;
-  
+      
       .title {
         text-align: center;
         font-size: 28px;
@@ -37,13 +37,20 @@
   
           form {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
   
             .inputGroup {
-              width: 48%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 100%;
               margin-bottom: 20px;
-              margin-right: 10px;
+              margin-right: 10px; 
+              .left {
+                margin-right: 40px;
+              }
   
               label {
                 display: block;
@@ -54,8 +61,8 @@
   
               input[type="text"],
               input[type="email"],
-              input[type="tel"],
-              textarea {
+              input[type="tel"]
+               {
                 width: 100%;
                 padding: 10px;
                 border: 1px solid #ccc;
@@ -65,9 +72,46 @@
                 color: #000;
               }
   
+             
+            }
+            .inputObjet{
+                width: 80%;
+              label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+                color: #fff;
+              }
+              input {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+                background-color: rgba(255, 255, 255, 0.8);
+                color: #000;
+              }
+            }
+            .inputmessage {
+              margin-top: 10px;
+              label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+                color: #fff;
+              }
               textarea {
-                height: 100px;
+
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+                background-color: rgba(255, 255, 255, 0.8);
+                color: #000;
+                margin-bottom: 6%;
                 resize: none;
+                
               }
             }
   
@@ -86,6 +130,35 @@
                   background-color: #0A66C2;
               }
             }
+            .form-message {
+              margin-top: 5%;
+              font-size: x-large;
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: 0.4s;
+              p, span {
+                display: flex;
+                border-radius: 10px;
+                align-items: center;
+                justify-content: center;
+                background-color: #19191f;
+                width: 40%;
+                height: 40px;
+                align-items: center;
+              }
+              p {
+                
+                color: #0A66C2;
+              }
+              span{
+                width: 80%;
+                
+                color: rgb(253, 100, 100);
+              }
+            }
+            
           }
         }
   

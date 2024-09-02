@@ -2,8 +2,9 @@ import Navbar from "../components/Navbar";
 import Profil from "../components/Profil";
 import Portfolio from "../components/Portfolio";
 import Competences from "../components/Competences";
-import Contact from "../components/Contact";
 import AnimatedTextInput from "../components/AnimatedTextInput";
+import Contact from "../components/Contact";
+import TestContact from "../components/TestContact";
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <Portfolio />
       <Competences />
       <Contact />
+      {/* <TestContact /> */}
     </div>
   );
 }
