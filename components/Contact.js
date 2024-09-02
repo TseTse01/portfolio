@@ -10,6 +10,10 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 // console.log(process.env.NEXT_PUBLIC_ID);
 
 const publicId = process.env.NEXT_PUBLIC_ID;
+const template = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+const service = process.env.NEXT_PUBLIC_SERVICE_ID;
+console.log(publicId, template, service);
+
 const Contact = () => {
   const form = useRef();
 
@@ -29,8 +33,8 @@ const Contact = () => {
     const formMess = document.querySelector(".form-message");
     emailjs
       .send(
-        "service_ds018t1", // ID du service EmailJS
-        "template_810ie0h", // ID du modèle d'email
+        service, // ID du service EmailJS
+        template, // ID du modèle d'email
         formData, // Objet avec les données du formulaire
         publicId // Clé publique de votre compte EmailJS
       )
