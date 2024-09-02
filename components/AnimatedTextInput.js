@@ -2,18 +2,17 @@ import React, { useState, useEffect } from "react";
 
 const AnimatedTextInput = () => {
   const [profil, setProfil] = useState(null);
+  useEffect(() => {
+    setProfil(document.querySelector(".sectionprofil"));
+  }, []);
 
-  const handleInput = (e) => {
-    e.preventDefault();
+  const handleInput = (el) => {
     // Scroll vers l'élément profil
-    profil?.scrollIntoView({
+    console.log(el);
+    el?.scrollIntoView({
       behavior: "smooth",
     });
   };
-
-  useEffect(() => {
-    setProfil(document.querySelector(".profilContainer"));
-  }, []);
 
   return (
     <div className="container">
@@ -21,7 +20,7 @@ const AnimatedTextInput = () => {
       <h1 className="hello-world">I'm a developpeur web & mobile 📱</h1>
       {/* <h1 className="hello-world">Davit Tsetsadze</h1> */}
       {/* <h1 className="hello-world">Developpeur web & mobile</h1> */}
-      <button onClick={handleInput}>plus d'info</button>
+      <button onClick={() => handleInput(profil)}>plus d'info</button>
     </div>
   );
 };

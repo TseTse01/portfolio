@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+
 const Profil = () => {
   return (
     <div className="sectionprofil">
@@ -16,11 +17,15 @@ const Profil = () => {
         </div>
         <div className="description">
           <p className="text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            numquam praesentium minus odit totam nam laborum maxime dolore.
-            Pariatur, dolorem! Corporis fuga inventore neque magnam. Ut odio
-            vitae error non soluta quibusdam molestias eaque assumenda, officia
-            quae alias ducimus cum!
+            Après de nombreuses années dans des secteurs aussi différents que
+            passionnants j’ai décidé de donner un nouveau souffle à ma carrière
+            et d’oser vivre un rêve : Développeur Web. J’ai commencé par une
+            première formation en ligne FromScratch pour apprendre des base et
+            enchaîné avec une formation intensive de 2 mois et demie pour un
+            titre de développeur Web/Mobile RNCP niveau 6 avec la formation La
+            Capsule. Passionné avant tout, je réalise de nombreux
+            “side-projects” pour monter en compétence, et découvrir de nouveaux
+            outils, mais soyons honnête... pour m'amuser aussi !
           </p>
         </div>
       </div>

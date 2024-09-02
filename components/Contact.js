@@ -6,6 +6,7 @@ import MailOpen from "../public/mail-open.svg";
 import MailPencil from "../public/mail-pencil.svg";
 import Telephone from "../public/telephone.svg";
 import emailjs from "@emailjs/browser";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 // console.log(process.env.NEXT_PUBLIC_ID);
 
 const publicId = process.env.NEXT_PUBLIC_ID;
@@ -29,21 +30,21 @@ const Contact = () => {
     emailjs
       .send(
         "service_ds018t1", // ID du service EmailJS
-        // "template_810ie0h", // ID du modèle d'email
+        "template_810ie0h", // ID du modèle d'email
         formData, // Objet avec les données du formulaire
         publicId // Clé publique de votre compte EmailJS
       )
       .then(
         () => {
           // console.log("SUCCESS!");
-          // form.current.reset();
-          formMess.innerHTML = "<p className='success'> Message envoyé !</p>";
-          // setTimeout(() => {
-          //   formMess.innerHTML = "";
-          // }, 2500);
+          form.current.reset();
+          formMess.innerHTML = "<p className='success'> Message envoyé  !</p>";
+          setTimeout(() => {
+            formMess.innerHTML = "";
+          }, 2500);
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          // console.log("FAILED...", error.text);
           formMess.innerHTML =
             "<span className='error'> Une error s'est produit veuillez réessayer !</span>";
         }
@@ -130,18 +131,22 @@ const Contact = () => {
             </form>
           </div>
           <div className="contactInfo">
-            <p>
-              <i className="mailSvg">
-                <MailPencil height={30} width={30} />
-              </i>{" "}
-              tsetsedavit3@gmail.com
-            </p>
-            <p>
-              <i className="telephoneSvg">
-                <Telephone height={30} width={30} />
-              </i>{" "}
-              0768582224
-            </p>
+            <CopyToClipboard text="tsetsedavit3@gmail.com">
+              <p onClick={() => alert("email copié !")}>
+                <i className="mailSvg">
+                  <MailPencil height={30} width={30} />
+                </i>{" "}
+                tsetsedavit3@gmail.com
+              </p>
+            </CopyToClipboard>
+            <CopyToClipboard text="+33768582224">
+              <p onClick={() => alert("telephone copié !")}>
+                <i className="telephoneSvg">
+                  <Telephone height={30} width={30} />
+                </i>{" "}
+                +33768582224
+              </p>
+            </CopyToClipboard>
             <p>
               <i className="homeSvg">
                 <Home height={30} width={30} />
@@ -151,8 +156,8 @@ const Contact = () => {
             <a href="https://www.linkedin.com" target="_blank">
               <Linkedin height={40} width={40} />
             </a>
-            <a href="https://github.com/" target="_blank">
-              <Github height={40} width={40} />
+            <a href="https://github.com/" target="_blank" className="github">
+              <Github height={40} width={40} className="github" />
             </a>
           </div>
         </div>

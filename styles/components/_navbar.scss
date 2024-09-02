@@ -10,14 +10,14 @@
     top: 0; /* Position par défaut */
     left: 0;
     right: 0;
-    transition: top 0.3s ease-in-out; /* Ajoute une transition pour un effet plus fluide */
+  
     z-index: 1000; /* Assure que la navbar est au-dessus d'autres éléments */
     
     .logoContainer {
       width: 30%;
       .logo {
         cursor: pointer;
-        transition: transform .3s;
+        transition: transform 0.3s ease-in-out;
         &:hover {
           color: yellow;
           transform: scale(1.2);
@@ -33,7 +33,7 @@
       color: white;
       .navlink {
         cursor: pointer;
-        transition: top 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out;
         &:hover {
           color: rgb(113,103,164);
           transform: scale(1.2);

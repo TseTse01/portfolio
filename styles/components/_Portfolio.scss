@@ -1,58 +1,89 @@
 .sectionPortfolio {
-    min-height: 400px;
-    background-color: rgb(12, 12, 12);
-  
-    .portfolio {
+  min-height: 400px;
+  background-color: rgb(12, 12, 12);
+
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .titlePortfolio {
+      font-size: xx-large;
+      color: white;
+      margin-bottom: 1rem;
+      margin-top: 20px;
+    }
+
+    .projectContainer {
       display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
       align-items: center;
-  
-      .titlePortfolio {
-        font-size: xx-large;
-        color: white;
-        margin-bottom: 1rem;
-        margin-top: 20px;
+      justify-content: flex-start; /* Aligne les cartes à gauche */
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+      width: 100%;
+      max-width: calc(350px * 4 + 3 * 1.3rem); /* Affiche 4 cartes + 3 gaps */
+      padding: 1rem 0;
+      min-height: 550px;
+      gap: 1.3rem;
+      scroll-behavior: smooth; /* Défilement fluide */
+
+      /* Personnalisation de la barre de défilement */
+      &::-webkit-scrollbar {
+        height: 8px;
       }
-  
-      .projectContainer {
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $color-2;
+        border-radius: 10px;
+      }
+
+      .card {
+        flex: 0 0 auto; /* Assure que les cartes ne se rétrécissent pas */
+        width: 350px; /* Définit une largeur fixe pour les cartes */
+        scroll-snap-align: start; /* Aligne chaque carte en début de défilement */
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
-        overflow-x: auto; /* Défilement horizontal */
-        overflow-y: hidden; /* Empêche le défilement vertical */
-        white-space: nowrap;
-        width: 100%; /* Assure que le container prend toute la largeur disponible */
-        padding: 1rem 0;
-  
-        .card {
-          gap: 1em;
-          // display: inline-block;
-          min-width: 300px; /* Définir une largeur pour chaque carte */
-          margin-left: 2rem; /* Espacement entre les cartes */
+        justify-content: center;
+        gap: 0.7em;
+
+        .image {
+          border: 2px solid white;
+          transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+          &:hover {
+            cursor: pointer;
+            /* Ajout d'une animation de transparence et de mouvement */
+            opacity: 0.7;
+            transform: scale(1.05);
+          }
+        }
+
+        p {
+          color: white;
+          margin-top: 5px;
+        }
+
+        .imageLanguage {
+          margin-top: 5px;
+          margin-left: 4px;
           display: flex;
-          flex-direction: column;
-          align-items: center;justify-content: center;
-  
-          .image {
-            border: 2px solid white;
-            
+          flex-wrap: wrap;
+          gap: 1rem;
+
+          /* Animation pour les logos SVG */
+          svg {
+            transition: transform 0.3s ease-in-out;
+
             &:hover {
-                cursor: pointer;
+              cursor: pointer;
+              transform: scale(1.2);
             }
-          }
-  
-          p {
-            color: white;
-            margin-top: 5px;
-          }
-          .imageLanguage {
-            margin-top: 5px;
-            margin-left: 4px;
-            display: flex;flex-wrap: wrap;
-            gap: 1rem;
           }
         }
       }
     }
   }
+}

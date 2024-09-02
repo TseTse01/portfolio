@@ -94,6 +94,8 @@
             }
             .inputmessage {
               margin-top: 10px;
+              width: 80%;
+              height: 150px;
               label {
                 display: block;
                 margin-bottom: 5px;
@@ -104,6 +106,7 @@
 
                 width: 100%;
                 padding: 10px;
+                min-height: 50%;
                 border: 1px solid #ccc;
                 border-radius: 4px;
                 font-size: 16px;
@@ -165,7 +168,12 @@
         .contactInfo {
           width: 35%;
           padding-left: 20px;
-  
+          .github {
+            stroke: none;
+            
+            
+          }
+          
           p {
             margin: 10px 0;
             font-size: 20px;
