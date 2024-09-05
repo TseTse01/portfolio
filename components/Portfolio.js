@@ -33,7 +33,7 @@ const Portfolio = () => {
                 </a>
               </Link>
             </div>
-            <p>Find your wave application SPA</p>
+            {/* <p>Find your wave application SPA</p> */}
             <p>project a ete developpé avec : </p>
             <div className="imageLanguage">
               <HtmlSvg height={40} width={40} />
@@ -59,7 +59,7 @@ const Portfolio = () => {
                 </a>
               </Link>
             </div>
-            <p>Find your wave application SPA</p>
+            {/* <p>Find your wave application SPA</p> */}
             <p>project a ete developpé avec : </p>
             <div className="imageLanguage">
               <HtmlSvg height={40} width={40} />
@@ -78,7 +78,7 @@ const Portfolio = () => {
                 alt="logo of the author"
               />
             </div>
-            <p>Find your wave application SPA</p>
+            {/* <p>Find your wave application SPA</p> */}
             <p>project a ete developpé avec : </p>
             <div className="imageLanguage">
               <HtmlSvg height={40} width={40} />
@@ -103,7 +103,7 @@ const Portfolio = () => {
                 </a>
               </Link>
             </div>
-            <p>Find your wave application SPA</p>
+            {/* <p>Find your wave application SPA</p> */}
             <p>project a ete developpé avec : </p>
             <div className="imageLanguage">
               <HtmlSvg height={40} width={40} className="svg" />
@@ -124,7 +124,7 @@ const Portfolio = () => {
                 </a>
               </Link>
             </div>
-            <p>Find your wave application SPA</p>
+            {/* <p>Find your wave application SPA</p> */}
             <p>project a ete developpé avec : </p>
             <div className="imageLanguage">
               <HtmlSvg height={40} width={40} />

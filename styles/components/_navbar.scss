@@ -10,7 +10,8 @@
     top: 0; /* Position par défaut */
     left: 0;
     right: 0;
-  
+    transition: top 0.4s ease-in-out;
+   
     z-index: 1000; /* Assure que la navbar est au-dessus d'autres éléments */
     @media screen and (max-width: 740px) {
       font-size: 1rem;
@@ -58,8 +59,10 @@
   
   .navbar.hidden {
     top: -1000px; /* Cache la navbar en haut */
+    
   }
   
   .navbar.visible {
     top: 0; /* Affiche la navbar */
+   
   }

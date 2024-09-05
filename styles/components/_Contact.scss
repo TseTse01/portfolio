@@ -31,6 +31,15 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        @media screen and (max-width: 680px) {
+          display: grid;
+          
+justify-content: space-evenly
+
+
+
+          
+         }
   
         .contact {
           width: 60%;
@@ -40,6 +49,9 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            @media screen and (max-width: 680px) {
+              display: grid;
+             }
   
             .inputGroup {
               display: flex;
@@ -48,8 +60,16 @@
               width: 100%;
               margin-bottom: 20px;
               margin-right: 10px; 
+              @media screen and (max-width: 680px) {
+                display: grid;
+               }
+             
               .left {
                 margin-right: 40px;
+                @media screen and (max-width: 680px) {
+                  margin-right: 0;
+                  
+                 }
               }
   
               label {
@@ -76,6 +96,11 @@
             }
             .inputObjet{
                 width: 80%;
+                @media screen and (max-width: 680px) {
+                  width: 100%;
+                  
+                  
+                 }
               label {
                 display: block;
                 margin-bottom: 5px;
@@ -96,6 +121,11 @@
               margin-top: 10px;
               width: 80%;
               height: 150px;
+              @media screen and (max-width: 680px) {
+                width: 100%;
+                
+                
+               }
               label {
                 display: block;
                 margin-bottom: 5px;
@@ -114,6 +144,11 @@
                 color: #000;
                 margin-bottom: 6%;
                 resize: none;
+                @media screen and (max-width: 680px) {
+                  width: 100%;
+                  
+                  
+                 }
                 
               }
             }
@@ -128,6 +163,11 @@
               cursor: pointer;
               font-size: 18px;
               transition: background-color 0.3s;
+              @media screen and (max-width: 680px) {
+                width: 110%;
+                
+                
+               }
               
               &:hover {
                   background-color: #0A66C2;

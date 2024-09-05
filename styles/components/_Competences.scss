@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 .sectionContainer {
     background-color: rgba(31, 28, 28, 0.5);
     padding: 30px;
@@ -17,11 +18,26 @@
     justify-content: center; 
     flex-direction: column;
     color: $color-2;
+    .titleContainer {
+.title {
+
+    @media screen and (max-width: 550px) {
+       font-size: 1rem;
+       padding-bottom: 10px;
+        }
+}
+    }
+   
     .container {
         display: flex;align-items: center;justify-content: space-evenly;flex-direction: row;
         height: 300px;
         gap: 2rem;
         width: 70%;
+        @media screen and (max-width: 850px) {
+            display: flex;
+            flex-direction: column;
+            }
+       
         .frontEndContainer {
             height: 80%;
             display: flex;
@@ -31,9 +47,20 @@
             background-color: rgb(30, 41, 41);
             border-radius: 20px;
             width: 100%;
+            h3 {
+                @media screen and (max-width: 550px) {
+                    font-size: 0.7rem;
+                     }
+            }
             svg {
                 transition: transform 0.3s ease-in-out;
                 margin-left: 1rem;
+                
+    @media screen and (max-width: 550px) {
+        height: 25px;
+        width: 25px;
+         }
+               
                 &:hover {
                     cursor: pointer;
                     opacity: 0.7;
