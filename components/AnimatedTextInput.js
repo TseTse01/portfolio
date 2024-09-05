@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Navbar from "./Navbar";
 
 const AnimatedTextInput = () => {
   const [profil, setProfil] = useState(null);
@@ -16,7 +17,7 @@ const AnimatedTextInput = () => {
 
   return (
     <div className="container">
-      <h1 className="hello-world">Hello Visiteur!🖐️</h1>
+      <h1 className="hello-world h1">Hello Visiteur!🖐️</h1>
       <h1 className="hello-world">I'm a developpeur web & mobile 📱</h1>
       {/* <h1 className="hello-world">Davit Tsetsadze</h1> */}
       {/* <h1 className="hello-world">Developpeur web & mobile</h1> */}

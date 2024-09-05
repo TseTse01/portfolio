@@ -12,7 +12,6 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 const publicId = process.env.NEXT_PUBLIC_ID;
 const template = process.env.NEXT_PUBLIC_TEMPLATE_ID;
 const service = process.env.NEXT_PUBLIC_SERVICE_ID;
-console.log(publicId, template, service);
 
 const Contact = () => {
   const form = useRef();
