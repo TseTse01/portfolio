@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import DownloadCVButton from "./DownloadCVButton";
 
 const Profil = () => {
   return (
@@ -27,6 +28,7 @@ const Profil = () => {
             “side-projects” pour monter en compétence, et découvrir de nouveaux
             outils, mais soyons honnête... pour m'amuser aussi !
           </p>
+          <DownloadCVButton />
         </div>
       </div>
     </div>

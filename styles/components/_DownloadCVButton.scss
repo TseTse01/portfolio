@@ -1,0 +1,21 @@
+.download-btn {
+  margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  width: 28%;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: $color-2;
+    }
+  
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.5);
+    }
+  }
