@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 // import svg languag
@@ -10,11 +10,18 @@ import NodeSvg from "../public/nodejs.svg";
 import ReactSvg from "../public/react.svg";
 import ScssSvg from "../public/scss2.svg";
 import ReactNativeSvg from "../public/react_native.svg";
+import Modal from "./Modal";
+
 const Portfolio = () => {
+  const [isModalvisible, setIsModalVisible] = useState(false);
+  const handelCklick = () => {
+    setIsModalVisible(!isModalvisible);
+  };
   return (
     <div className="sectionPortfolio">
       <div className="portfolio">
         <div className="titlePortfolio">
+          <Modal isModalvisible={isModalvisible} />
           <p>Portfolio...</p>
         </div>
 
@@ -34,7 +41,7 @@ const Portfolio = () => {
               </Link>
             </div>
             {/* <p>Find your wave application SPA</p> */}
-            <p>project a ete developpé avec : </p>
+            <p onClick={handelCklick}>project a ete developpé avec : </p>
             <div className="imageLanguage">
               <HtmlSvg height={40} width={40} />
               <JavascriptSvg height={40} width={40} />
