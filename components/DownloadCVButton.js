@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const DownloadCVButton = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    // Ce code s'exécute uniquement côté client
+    setIsClient(true);
+  }, []);
+
   const handleDownload = () => {
-    if (typeof window !== "undefined") {
+    if (isClient) {
       const fileUrl = "/cv.pdf";
       const link = document.createElement("a");
       link.href = fileUrl;
