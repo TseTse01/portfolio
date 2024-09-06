@@ -1,6 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import DownloadCVButton from "./DownloadCVButton";
+// import DownloadCVButton from "./DownloadCVButton";
+import dynamic from "next/dynamic";
+
+const DownloadCVButton = dynamic(() => import("./DownloadCVButton"), {
+  ssr: false,
+});
 
 const Profil = () => {
   console.log(document.body);
