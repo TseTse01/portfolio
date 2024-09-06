@@ -3,6 +3,8 @@ import Image from "next/image";
 import DownloadCVButton from "./DownloadCVButton";
 
 const Profil = () => {
+  console.log(document.body);
+
   return (
     <div className="sectionprofil">
       <div className="titleProfil">A propos de moi...</div>

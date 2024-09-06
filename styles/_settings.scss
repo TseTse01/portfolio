@@ -9,4 +9,19 @@ $color-3: #e7f7fe;
     text-decoration: none;
     
   }
- 
+  @font-face {
+    font-family: "PlayfairDisplayRegular";
+    src: local("PlayfairDisplayRegular"),
+     url("../fonts/playfair_display/static/PlayfairDisplay-Regular.ttf") format("truetype");
+    font-weight: 700;
+   }
+  @font-face {
+    font-family: "RobotoItalic";
+    src: local("RobotoItalic"),
+     url("../fonts/roboto/Roboto-Italic.ttf") format("truetype");
+    font-weight: 600;
+   }
+
+   .appContainer {
+    font-family: "PlayfairDisplayRegular"
+   }

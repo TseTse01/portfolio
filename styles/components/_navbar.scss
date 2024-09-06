@@ -1,5 +1,6 @@
 .navbar {
-    min-height: 5rem;
+  background-color: #050C0E;
+    height: 3rem;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -64,5 +65,4 @@
   
   .navbar.visible {
     top: 0; /* Affiche la navbar */
-   
   }
