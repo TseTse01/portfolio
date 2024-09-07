@@ -15,8 +15,8 @@
         justify-content: center;
         @media screen and (max-width: 780px) {
             display: flex;
-            flex-direction: column;
             margin-top: 15px;
+            flex-direction: column-reverse
            }
         .photo {
             width: 50%;
