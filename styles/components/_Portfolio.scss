@@ -39,7 +39,7 @@
         border-radius: 10px;
       }
 
-      .card {
+      .cardC {
         flex: 0 0 auto; /* Assure que les cartes ne se rétrécissent pas */
         width: 350px; /* Définit une largeur fixe pour les cartes */
         scroll-snap-align: start; /* Aligne chaque carte en début de défilement */
@@ -48,15 +48,16 @@
         align-items: center;
         justify-content: center;
         gap: 0.7em;
-
+        h2 {
+          color: white;
+        }
         .image {
           border: 2px solid white;
           transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 
           &:hover {
             cursor: pointer;
-            /* Ajout d'une animation de transparence et de mouvement */
-            opacity: 0.7;
+            opacity: 0.5;
             transform: scale(1.05);
           }
         }

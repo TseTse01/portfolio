@@ -43,7 +43,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className={`navbar ${navbarVisible ? "visible" : "hidden"}`}>
+    <div className={`navbarC ${navbarVisible ? "visible" : "hidden"}`}>
       <div className="logoContainer">
         <Image
           className="logo"

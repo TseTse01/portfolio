@@ -1,0 +1,37 @@
+.custom-modal {
+    .modal-content {
+      background-color: #000; // Fond noir
+      color: #fff; // Texte blanc
+      font-family: 'Arial', sans-serif; // Police personnalisée
+  
+      // Centrer le contenu
+      text-align: center;
+  
+      // Ajuster le padding pour l'alignement
+      padding: 20px;
+     
+    }
+  
+    .modal-header, .modal-footer {
+      border: none; // Retirer les bordures par défaut de Bootstrap
+    }
+  
+    .modal-title {
+      font-size: 2rem; // Augmenter la taille du titre
+    }
+  
+    .QrCodeContainer {
+      margin-top: 20px;
+    }
+  
+    // Styliser le bouton "Close"
+    .btn {
+      background-color: #007bff; // Couleur du bouton (bleu par exemple)
+      color: #fff; // Texte blanc
+      border: none;
+  
+      &:hover {
+        background-color: #0056b3; // Couleur au survol
+      }
+    }
+  }
