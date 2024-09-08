@@ -9,24 +9,32 @@ import MongoDBSvg from "../public/mongodb.svg";
 import NodeSvg from "../public/nodejs.svg";
 import ReactSvg from "../public/react.svg";
 import ScssSvg from "../public/scss2.svg";
-import ReactNativeSvg from "../public/react_native.svg";
-import Modal from "./Modal";
+import ModalVeloDispo from "./ModalVeloDispo";
+// import { useDispatch } from "react-redux";
+// import { isClicked } from "../reducers/user";
 
 const Portfolio = () => {
   const [isModalvisible, setIsModalVisible] = useState(false);
+  // const dispatch = useDispatch();
   const handelCklick = () => {
     setIsModalVisible(!isModalvisible);
+    // dispatch(isClicked(!isModalvisible));
   };
   return (
     <div className="sectionPortfolio">
       <div className="portfolio">
         <div className="titlePortfolio">
-          <Modal isModalvisible={isModalvisible} />
           <p>Portfolio...</p>
         </div>
-
+        <ModalVeloDispo
+          handelCklick={handelCklick}
+          isModalvisible={isModalvisible}
+        />
         <div className="projectContainer">
-          <div className="card">
+          <div className="cardC">
+            <div>
+              <h2>My movies</h2>
+            </div>
             <div className="image">
               <Link href="https://cinema-app-gamma.vercel.app/" passHref>
                 <a target="_blank" rel="noopener noreferrer">
@@ -41,7 +49,7 @@ const Portfolio = () => {
               </Link>
             </div>
             {/* <p>Find your wave application SPA</p> */}
-            <p onClick={handelCklick}>project a ete developpé avec : </p>
+            <p>project a ete developpé avec : </p>
             <div className="imageLanguage">
               <HtmlSvg height={40} width={40} />
               <JavascriptSvg height={40} width={40} />
@@ -49,7 +57,10 @@ const Portfolio = () => {
               <ScssSvg height={40} width={40} />
             </div>
           </div>
-          <div className="card">
+          <div className="cardC">
+            <div>
+              <h2>Crypto-watch</h2>
+            </div>
             <div className="image">
               <Link
                 href="https://crypto-watch-react-project.vercel.app/"
@@ -75,8 +86,11 @@ const Portfolio = () => {
               <ScssSvg height={40} width={40} />
             </div>
           </div>
-          <div className="card">
-            <div className="image">
+          <div className="cardC">
+            <div>
+              <h2>VelodispØ</h2>
+            </div>
+            <div className="image" onClick={handelCklick}>
               <Image
                 className="logo"
                 src="/velodispo.jpg"
@@ -96,7 +110,10 @@ const Portfolio = () => {
               {/* <CssSvg height={40} width={40} /> */}
             </div>
           </div>
-          <div className="card">
+          <div className="cardC">
+            <div>
+              <h2>Travel</h2>
+            </div>
             <div className="image">
               <Link href="https://project-mountain-html.vercel.app/" passHref>
                 <a target="_blank" rel="noopener noreferrer">
@@ -117,7 +134,10 @@ const Portfolio = () => {
               <ScssSvg height={40} width={40} className="svg" />
             </div>
           </div>
-          <div className="card">
+          <div className="cardC">
+            <div>
+              <h2>Gaming Campus</h2>
+            </div>
             <div className="image">
               <Link href="https://gaming-campus-html-css.vercel.app/" passHref>
                 <a target="_blank" rel="noopener noreferrer">

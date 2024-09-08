@@ -1,3 +1,20 @@
+@keyframes changeColorAndMove {
+    0% {
+      transform: translateY(0);
+      fill: #000; // Couleur de départ
+    }
+    50% {
+    //   transform: translateY(-10px);
+    transform: scale(1.2);
+      fill: #3498db; // Couleur intermédiaire (bleu par exemple)
+    }
+    100% {
+      transform: translateY(0);
+      fill: #000; // Retour à la couleur de départ
+    }
+  }
+
+
 .sectionCompetence {
     background-color: rgb(3, 5, 5);
     background-size: cover;
@@ -14,10 +31,14 @@
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     color: #fff;
-    display: flex;align-items: center;
+    display: flex;
+    align-items: center;
     justify-content: center; 
     flex-direction: column;
     color: $color-2;
+    @media screen and (max-width: 450px) {
+        width: 90%;
+         }
     .titleContainer {
 .title {
 
@@ -29,11 +50,14 @@
     }
    
     .container {
-        display: flex;align-items: center;justify-content: space-evenly;flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
         height: 300px;
         gap: 2rem;
-        width: 70%;
-        @media screen and (max-width: 850px) {
+        width: 90%;
+        @media screen and (max-width: 1060px) {
             display: flex;
             flex-direction: column;
             }
@@ -47,27 +71,41 @@
             background-color: rgb(30, 41, 41);
             border-radius: 20px;
             width: 100%;
+            .svgContainer {
+                // display: flex;
+                flex-wrap: wrap;
+                // flex-direction: row;
+                // margin-left: 15px;
+                margin-left: 15px;
+                
+            }
             h3 {
                 @media screen and (max-width: 550px) {
                     font-size: 0.7rem;
                      }
             }
             svg {
-                transition: transform 0.3s ease-in-out;
-                margin-left: 1rem;
                 
-    @media screen and (max-width: 550px) {
+                transition: transform 0.3s ease;
+                animation: changeColorAndMove 2s infinite;
+               margin:5px 5px;
+                &:hover {
+                    transform: scale(1.2);
+                }
+                
+                @media screen and (max-width: 985px) {
+                   margin-left: 10px;
+        height: 33px;
+        width: 33px;
+         }
+                @media screen and (max-width: 710px) {
         height: 25px;
         width: 25px;
          }
                
-                &:hover {
-                    cursor: pointer;
-                    opacity: 0.7;
-                  transform: scale(1.3);
-                }
-              }
+     
         }
+    }
     }
 }
 }

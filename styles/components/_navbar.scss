@@ -1,4 +1,4 @@
-.navbar {
+.navbarC {
   height: 3rem;
   width: 100%;
   display: flex;
@@ -19,10 +19,10 @@
       flex-direction: column;
     }
     
+    @media screen and (max-width: 450px) {
+      height: 11.5rem;
+    }
     .logoContainer {
-      @media screen and (max-width: 600px) {
-        
-      }
       width: 30%;
       .logo {
         cursor: pointer;
@@ -58,12 +58,12 @@
     }
   }
   
-  .navbar.hidden {
+  .navbarC.hidden {
     top: -1000px; /* Cache la navbar en haut */
     
   }
   
-  .navbar.visible {
+  .navbarC.visible {
     top: 0; /* Affiche la navbar */
     background-color: #050C0E;
     // @media screen and (max-width: 740px) {

@@ -7,6 +7,7 @@ import MailPencil from "../public/mail-pencil.svg";
 import Telephone from "../public/telephone.svg";
 import emailjs from "@emailjs/browser";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import Link from "next/link";
 // console.log(process.env.NEXT_PUBLIC_ID);
 
 const publicId = process.env.NEXT_PUBLIC_ID;
@@ -156,12 +157,16 @@ const Contact = () => {
               </i>{" "}
               Paris, Île-de-France
             </p>
-            <a href="https://www.linkedin.com" target="_blank">
-              <Linkedin height={40} width={40} />
-            </a>
-            <a href="https://github.com/" target="_blank" className="github">
-              <Github height={40} width={40} className="github" />
-            </a>
+            <Link href="https://www.linkedin.com/in/davit-tsetsadze-422ab12a0/">
+              <a target="_blank" rel="noopener noreferrer">
+                <Linkedin height={40} width={40} />
+              </a>
+            </Link>
+            <Link href="https://github.com/TseTse01">
+              <a rel="noopener noreferrer" target="_blank" className="github">
+                <Github height={40} width={40} className="github" />
+              </a>
+            </Link>
           </div>
         </div>
       </div>

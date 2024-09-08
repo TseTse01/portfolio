@@ -25,17 +25,16 @@ const Competences = () => {
               {" "}
               <h3 className="title">Front-end</h3>
             </div>
-            <div className="left">
+            <div className="svgContainer">
               <JavascriptSvg height={40} width={40} />
               <ReactSvg height={40} width={40} />
               <HtmlSvg height={40} width={40} />
-            </div>
-            <div className="right">
+
               <CssSvg height={40} width={40} />
               <ScssSvg height={40} width={40} />
               <Tailwindcss height={40} width={40} />
+              <Typescript height={40} width={40} />
             </div>
-            <Typescript height={40} width={40} />
           </div>
           <div className="frontEndContainer">
             <div>
