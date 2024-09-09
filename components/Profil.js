@@ -15,7 +15,7 @@ const Profil = () => {
         <div className="photo">
           <Image
             className="image"
-            src="/myphoto.jpeg"
+            src="/myphotomodifie.png"
             width={300}
             height={300}
             alt="Picture of the author"
