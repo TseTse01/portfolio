@@ -20,6 +20,7 @@
         @media screen and (max-width: 780px) {
             display: flex;
             margin-top: 15px;
+            flex-direction: column;
         }
         .photo {
             width: 50%;
