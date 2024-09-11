@@ -19,37 +19,31 @@ const Competences = () => {
         <div className="titleContainer">
           <h1 className="title">Mes competences</h1>
         </div>
-        <div className="container">
-          <div className="frontEndContainer">
-            <div>
-              {" "}
-              <h3 className="title">Front-end</h3>
-            </div>
-            <div className="svgContainer">
-              <JavascriptSvg height={40} width={40} />
-              <ReactSvg height={40} width={40} />
-              <HtmlSvg height={40} width={40} />
-
-              <CssSvg height={40} width={40} />
-              <ScssSvg height={40} width={40} />
-              <Tailwindcss height={40} width={40} />
-              <Typescript height={40} width={40} />
-            </div>
+        <div className="frontEndContainer">
+          <div>
+            {" "}
+            <h3 className="title">Front-end</h3>
           </div>
-          <div className="frontEndContainer">
-            <div>
-              {" "}
-              <h3 className="title">Back-End</h3>
-            </div>
-            <div className="left">
-              <MongoDBSvg height={40} width={40} />
-              <NodeSvg height={40} width={40} />
-              <Express height={40} width={40} />
-            </div>
-            <div className="right">
-              <Git height={40} width={40} />
-            </div>
-            <div></div>
+          <div className="svgContainer">
+            <JavascriptSvg height={40} width={40} />
+            <ReactSvg height={40} width={40} />
+            <HtmlSvg height={40} width={40} />
+            <CssSvg height={40} width={40} />
+            <ScssSvg height={40} width={40} />
+            <Tailwindcss height={40} width={40} />
+            <Typescript height={40} width={40} />
+          </div>
+        </div>
+        <div className="frontEndContainer">
+          <div>
+            {" "}
+            <h3 className="title">Back-End</h3>
+          </div>
+          <div className="svgContainer">
+            <MongoDBSvg height={40} width={40} />
+            <NodeSvg height={40} width={40} />
+            <Express height={40} width={40} />
+            <Git height={40} width={40} />
           </div>
         </div>
       </div>

@@ -71,19 +71,18 @@ const AnimatedTextInput = () => {
         exit="exit"
         variants={variants}
       >
-        <h1 className="hello-world h1">
-          <motion.h1
-            drag
-            dragConstraints={{
-              left: -250,
-              right: 950,
-              top: -200,
-              bottom: 250,
-            }}
-          >
-            Hello <span className="textAnim"> {text}</span>🖐️
-          </motion.h1>
-        </h1>
+        <motion.h1
+          className="hello-world h1"
+          drag
+          dragConstraints={{
+            left: -250,
+            right: 950,
+            top: -200,
+            bottom: 250,
+          }}
+        >
+          Hello <span className="textAnim"> {text}</span>🖐️
+        </motion.h1>
       </motion.div>
       <h1 className="hello-world">I'm a developpeur web & mobile 📱</h1>
       <button onClick={() => handleInput(profil)}>plus d'info</button>

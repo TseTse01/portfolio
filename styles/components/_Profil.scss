@@ -1,13 +1,17 @@
 .sectionprofil {
-    background-color: rgb(5, 12, 14);
+    // background-color: rgb(5, 12, 14);
     min-height: 400px;
     display: grid;
     justify-items: center;
     align-content: space-around;
-   
+    background-color: #0e0e0e;
     .titleProfil {
         font-size: x-large;
         color: white;
+        padding: 40px;
+        margin-bottom: 1rem;
+        font-family: "PtMono";
+        
     }
     .descriptionContainer {
         display: flex;
@@ -17,26 +21,26 @@
             display: flex;
             flex-direction: column;
             margin-top: 15px;
-           }
+        }
         .photo {
             width: 50%;
             display: flex;
             justify-content: center;
             .image {
                 border-radius: 20px;
-         }
+            }
             
         }
         .description {
             width: 50%;
             display: grid;
-           font-family: "RobotoItalic";
             justify-items: center;
+            font-family: "Inter";
             @media screen and (max-width: 780px) {
-               width: 100%;
+                width: 100%;
                 margin: 15px;
-               }
-        .text {
+            }
+            .text {
             width: 60%;
             color: white;
           

@@ -155,18 +155,21 @@ const Contact = () => {
               <i className="homeSvg">
                 <Home height={30} width={30} />
               </i>{" "}
-              Paris, Île-de-France
+              Paris
+              {/* ,Île-de-France */}
             </p>
-            <Link href="https://www.linkedin.com/in/davit-tsetsadze-422ab12a0/">
-              <a target="_blank" rel="noopener noreferrer">
-                <Linkedin height={40} width={40} />
-              </a>
-            </Link>
-            <Link href="https://github.com/TseTse01">
-              <a rel="noopener noreferrer" target="_blank" className="github">
-                <Github height={40} width={40} className="github" />
-              </a>
-            </Link>
+            <div className="link">
+              <Link href="https://www.linkedin.com/in/davit-tsetsadze-422ab12a0/">
+                <a target="_blank" rel="noopener noreferrer">
+                  <Linkedin height={40} width={40} />
+                </a>
+              </Link>
+              <Link href="https://github.com/TseTse01">
+                <a rel="noopener noreferrer" target="_blank" className="github">
+                  <Github height={40} width={40} className="github" />
+                </a>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

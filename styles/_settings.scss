@@ -21,7 +21,19 @@ $color-3: #e7f7fe;
      url("../fonts/roboto/Roboto-Italic.ttf") format("truetype");
     font-weight: 600;
    }
+  @font-face {
+    font-family: "Inter";
+    src: local("inter"),
+     url("../fonts/inter/static/Inter_24pt-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+   }
+  @font-face {
+    font-family: "PtMono";
+    src: local("PtMono"),
+     url("../fonts/ptMono/PTMono-Regular.ttf") format("truetype");
+    font-weight: 600;
+   }
 
    .appContainer {
-    font-family: "PlayfairDisplayRegular"
+    font-family: "PtMono"
    }
