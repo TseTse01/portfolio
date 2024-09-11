@@ -4,7 +4,7 @@ import Modal from "react-bootstrap/Modal";
 import Image from "next/image";
 const ModalVeloDispo = ({ isModalvisible, handelCklick }) => {
   return (
-    <>
+    <div>
       <Modal
         show={isModalvisible}
         size="lg"
@@ -43,7 +43,7 @@ const ModalVeloDispo = ({ isModalvisible, handelCklick }) => {
           <Button onClick={handelCklick}>Close</Button>
         </Modal.Footer>
       </Modal>
-    </>
+    </div>
   );
 };
 

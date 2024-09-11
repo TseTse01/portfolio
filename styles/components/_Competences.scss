@@ -16,96 +16,75 @@
 
 
 .sectionCompetence {
-    background-color: rgb(3, 5, 5);
+    background-color: #0e0e0e;
     background-size: cover;
-    padding: 50px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-.sectionContainer {
-    background-color: rgba(31, 28, 28, 0.5);
-    padding: 30px;
-    max-width: 1000px;
-    width: 50%;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    flex-direction: column;
-    color: $color-2;
-    @media screen and (max-width: 450px) {
-        width: 90%;
-         }
-    .titleContainer {
-.title {
-
-    @media screen and (max-width: 550px) {
-       font-size: 1rem;
-       padding-bottom: 10px;
-        }
-}
-    }
-   
-    .container {
+    width: 100%;
+    font-family: "PtMono";
+    .sectionContainer {
+        padding-top: 48px;
+        color: #fff;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        flex-direction: row;
-        height: 300px;
-        gap: 2rem;
-        width: 90%;
-        @media screen and (max-width: 1060px) {
-            display: flex;
-            flex-direction: column;
-            }
-       
-        .frontEndContainer {
-            height: 80%;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            flex-direction: column;
-            background-color: rgb(30, 41, 41);
-            border-radius: 20px;
-            width: 100%;
-            .svgContainer {
-                // display: flex;
-                flex-wrap: wrap;
-                // flex-direction: row;
-                // margin-left: 15px;
-                margin-left: 15px;
-                
-            }
-            h3 {
-                @media screen and (max-width: 550px) {
-                    font-size: 0.7rem;
-                     }
-            }
-            svg {
-                
-                transition: transform 0.3s ease;
-                animation: changeColorAndMove 2s infinite;
-               margin:5px 5px;
-                &:hover {
-                    transform: scale(1.2);
-                }
-                
-                @media screen and (max-width: 985px) {
-                   margin-left: 10px;
-        height: 33px;
-        width: 33px;
-         }
-                @media screen and (max-width: 710px) {
-        height: 25px;
-        width: 25px;
-         }
-               
-     
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        .titleContainer {
+            margin: 25px;
         }
     }
+    .frontEndContainer {
+        height: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 33%;
+        background-color: #222424;
+        margin-bottom: 30px;
+        border-radius: 25px;
+        @media screen and (max-width: 1520px) {
+            width: 45%;
+           
+          }
+        @media screen and (max-width: 1130px) {
+            width: 55%;
+           
+          }
+        @media screen and (max-width: 930px) {
+            width: 65%;
+           
+          }
+        @media screen and (max-width: 550px) {
+            width: 75%;
+           
+          }
+          
+        .title {
+            margin-bottom: 25px;
+        }
+        .svgContainer {
+            display: flex;
+            gap: 1rem;
+        }
+        svg {
+                
+            transition: transform 0.3s ease;
+            animation: changeColorAndMove 2s infinite;
+            @media screen and (max-width: 780px) {
+                height: 30px;
+                width: 30px;
+               
+              }
+            @media screen and (max-width: 550px) {
+                height: 20px;
+                width: 20px;
+               
+              }
+           
+        }        
     }
 }
-}
+

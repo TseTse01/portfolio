@@ -32,21 +32,21 @@ const Portfolio = () => {
         />
         <div className="projectContainer">
           <div className="cardC">
-            <div>
-              <h2>My movies</h2>
-            </div>
             <div className="image">
               <Link href="https://cinema-app-gamma.vercel.app/" passHref>
                 <a target="_blank" rel="noopener noreferrer">
                   <Image
                     className="logo"
-                    src="/cinema.png"
+                    src="/mymovie-gradient.png"
                     width={350}
                     height={350}
                     alt="logo of the author"
                   />
                 </a>
               </Link>
+            </div>
+            <div>
+              <h2>My movies</h2>
             </div>
             {/* <p>Find your wave application SPA</p> */}
             <p>project a ete developpé avec : </p>
@@ -58,9 +58,6 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="cardC">
-            <div>
-              <h2>Crypto-watch</h2>
-            </div>
             <div className="image">
               <Link
                 href="https://crypto-watch-react-project.vercel.app/"
@@ -69,13 +66,16 @@ const Portfolio = () => {
                 <a target="_blank" rel="noopener noreferrer">
                   <Image
                     className="logo"
-                    src="/crypto_watch.png"
+                    src="/bitcoin-gradient.png"
                     width={350}
                     height={350}
                     alt="logo of the author"
                   />
                 </a>
               </Link>
+            </div>
+            <div>
+              <h2>Crypto-watch</h2>
             </div>
             {/* <p>Find your wave application SPA</p> */}
             <p>project a ete developpé avec : </p>
@@ -87,17 +87,17 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="cardC">
-            <div>
-              <h2>VelodispØ</h2>
-            </div>
             <div className="image" onClick={handelCklick}>
               <Image
                 className="logo"
-                src="/velodispo.jpg"
+                src="/velo-gradient.png"
                 width={350}
                 height={350}
                 alt="logo of the author"
               />
+            </div>
+            <div>
+              <h2>VelodispØ</h2>
             </div>
             {/* <p>Find your wave application SPA</p> */}
             <p>project a ete developpé avec : </p>
@@ -111,21 +111,21 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="cardC">
-            <div>
-              <h2>Travel</h2>
-            </div>
             <div className="image">
               <Link href="https://project-mountain-html.vercel.app/" passHref>
                 <a target="_blank" rel="noopener noreferrer">
                   <Image
                     className="logo"
-                    src="/mountain.png"
+                    src="/lamontagne-gradient.png"
                     width={350}
                     height={350}
                     alt="logo of the author"
                   />
                 </a>
               </Link>
+            </div>
+            <div>
+              <h2>Travel</h2>
             </div>
             {/* <p>Find your wave application SPA</p> */}
             <p>project a ete developpé avec : </p>
@@ -135,21 +135,21 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="cardC">
-            <div>
-              <h2>Gaming Campus</h2>
-            </div>
             <div className="image">
               <Link href="https://gaming-campus-html-css.vercel.app/" passHref>
                 <a target="_blank" rel="noopener noreferrer">
                   <Image
                     className="logo"
-                    src="/gamingCampus.png"
+                    src="/gaming-gradient.png"
                     width={350}
                     height={350}
                     alt="logo of the author"
                   />
                 </a>
               </Link>
+            </div>
+            <div>
+              <h2>Gaming Campus</h2>
             </div>
             {/* <p>Find your wave application SPA</p> */}
             <p>project a ete developpé avec : </p>

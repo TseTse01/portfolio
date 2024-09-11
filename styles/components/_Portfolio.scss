@@ -1,6 +1,6 @@
 .sectionPortfolio {
   min-height: 400px;
-  background-color: rgb(12, 12, 12);
+  background-color: #0e0e0e;
 
   .portfolio {
     display: flex;
@@ -11,25 +11,25 @@
     .titlePortfolio {
       font-size: xx-large;
       color: white;
+      padding: 40px;
       margin-bottom: 1rem;
-      margin-top: 20px;
+      
     }
 
     .projectContainer {
       display: flex;
       align-items: center;
-      justify-content: flex-start; /* Aligne les cartes à gauche */
+      justify-content: flex-start;
       overflow-x: auto;
       overflow-y: hidden;
       white-space: nowrap;
       width: 100%;
-      max-width: calc(350px * 4 + 3 * 1.3rem); /* Affiche 4 cartes + 3 gaps */
-      padding: 1rem 0;
+      max-width: calc(350px * 4 + 3 * 1.3rem);
+      padding: 1rem 1rem;
       min-height: 550px;
       gap: 1.3rem;
-      scroll-behavior: smooth; /* Défilement fluide */
-
-      /* Personnalisation de la barre de défilement */
+      scroll-behavior: smooth;
+      
       &::-webkit-scrollbar {
         height: 8px;
       }
@@ -40,44 +40,56 @@
       }
 
       .cardC {
-        flex: 0 0 auto; /* Assure que les cartes ne se rétrécissent pas */
-        width: 350px; /* Définit une largeur fixe pour les cartes */
-        scroll-snap-align: start; /* Aligne chaque carte en début de défilement */
+        flex: 0 0 auto;
+        width: 350px;
+        scroll-snap-align: start;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 0.7em;
+        margin-bottom: 35px;
+        
+        font-family: "Inter";
         h2 {
           color: white;
         }
+        
         .image {
-          border: 2px solid white;
-          transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-
-          &:hover {
-            cursor: pointer;
-            opacity: 0.5;
-            transform: scale(1.05);
+          width: 100%;
+          // height: 250px; /* Définir une hauteur fixe pour l'image */
+          border-radius: 40px;
+          overflow: hidden; /* Cache l'image lorsqu'elle dépasse du conteneur */
+          transition: transform 0.3s ease-in-out;
+          cursor: pointer;
+          
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Garde l'image bien ajustée à l'intérieur du conteneur */
+            transition: transform 0.3s ease-in-out;
+          }
+          
+          &:hover img {
+            transform: scale(1.1); /* Zoom à l'intérieur de l'image */
           }
         }
-
+        
         p {
           color: white;
           margin-top: 5px;
         }
-
+        
         .imageLanguage {
           margin-top: 5px;
           margin-left: 4px;
           display: flex;
           flex-wrap: wrap;
           gap: 1rem;
-
-          /* Animation pour les logos SVG */
+          
           svg {
             transition: transform 0.3s ease-in-out;
-
+            
             &:hover {
               cursor: pointer;
               transform: scale(1.2);
