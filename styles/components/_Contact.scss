@@ -6,14 +6,12 @@
     justify-content: center;
     background-color: #0e0e0e;
     .contactContainer {
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: #222424;
       padding: 30px;
       max-width: 1000px;
       width: 100%;
       border-radius: 12px;
-      // box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
       color: #fff;
-      
       .title {
         text-align: center;
         font-size: 28px;
@@ -23,8 +21,15 @@
   
       .text {
         text-align: center;
-        font-size: 18px;
+        font-size: 1rem;
         margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        margin: 24px auto 48px auto;
+        font-weight: 300;
+        justify-content: center;
+        width: 60%;
+        font-family: 'Inter';
       }
   
       .contactBox {

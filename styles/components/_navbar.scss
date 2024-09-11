@@ -1,32 +1,33 @@
 .navbarC {
-  height: 3rem;
+  height: 4rem;
   width: 100%;
   display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: larger;
-    // background-color: rgba(0, 0, 0, 1);
-    position: fixed; /* Ajoute cette propriété pour fixer la navbar en haut de la page */
-    top: 0; /* Position par défaut */
-    left: 0;
-    right: 0;
-    transition: top 0.4s ease-in-out;
-    
-    z-index: 1000; /* Assure que la navbar est au-dessus d'autres éléments */
-    padding-top: 15px;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1rem;
+  position: fixed;
+  top: 0;
+  background: #222424;
+  left: 0;
+  right: 0;
+  transition: top .4s ease-in-out;
+  z-index: 1000;
+  line-height: 4rem;
     @media screen and (max-width: 740px) {
       font-size: 1rem;
         height: 10rem;
       flex-direction: column;
     }
     
-    @media screen and (max-width: 450px) {
-      height: 11.5rem;
+    @media screen and (max-width: 460px) {
+      height: 14.5rem;
     }
     .logoContainer {
-      
-      .logo {
+  display: flex;
+     
+      img {
         cursor: pointer;
+     
       }
     }
     
@@ -51,6 +52,7 @@
          margin-right: 0;
          flex-wrap: wrap;
         }
+     
         .navlink {
           cursor: pointer;
           transition: transform 0.3s ease-in-out;
@@ -61,4 +63,11 @@
       }
     }
   }
+  // .visible {
+  //   top: 0;
+   
+  // }
   
+  // .hidden {
+  //   top: -1600px;
+  // }

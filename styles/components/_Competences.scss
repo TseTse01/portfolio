@@ -61,10 +61,13 @@
             width: 75%;
            
           }
-          
-        .title {
-            margin-bottom: 25px;
-        }
+          .titleContainer {
+            margin: 96px 0px 24px 0;
+
+            .title {
+                margin-bottom: 25px;
+            }
+          }
         .svgContainer {
             display: flex;
             gap: 1rem;
@@ -88,3 +91,8 @@
     }
 }
 
+@media (min-width: 1200px) {
+  .h3, h3 {
+      font-size: 1.4rem;
+}
+}

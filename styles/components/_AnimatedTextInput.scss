@@ -41,14 +41,13 @@
 
     }
     .hello-world {
-        font-size: 4rem;
-        color: white;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        animation: fadeInText 2s ease-in-out forwards;
-        margin-bottom: 2rem;
-        font-family: "PtMono";
+      font-size: 2rem;
+      color: #fff;
+      text-align: center;
+      padding: 0;
+      animation: fadeInText 2s ease-in-out forwards;
+      margin: 0 0 2rem;
+      font-family: "PtMono";
         @media screen and (max-width: 600px) {
           font-size: 2rem;
       

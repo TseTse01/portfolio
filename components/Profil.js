@@ -35,6 +35,7 @@ const Profil = () => {
             outils, mais soyons honnête... pour m'amuser aussi !
           </p>
           {/* Le bouton de téléchargement du CV */}
+
           <DownloadCVButton />
         </div>
       </div>
